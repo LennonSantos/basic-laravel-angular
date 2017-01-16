@@ -1,0 +1,40 @@
+#LARAVEL
+
+> Instalar
+	- composer create-project laravel/laravel nome-projeto
+
+> Rodar
+	- php artisan serve
+
+> Rotas
+	(local) - app/http/routes.php
+
+> Views
+	(local) - resources/views/
+
+> Controler
+	(criar) - php artisan make:controller NomeController
+	(local) - app/http/controllers
+
+> Migrations
+	(criar) - php artisan make:migration create_nometabela [obs. no plural]
+	(criar) - php artisan make:migration create_nometabela_table --create=clientes 
+	(local) - database/migrations
+	(rodar) - php artisan migrate
+	(volta) - php artisan migrate:rollback
+
+	> Config DB
+		no arquivo .env configurar
+
+> Model
+	(criar) -  php artisan make:model Nomemodel
+	(local) - app/
+
+> Tinker
+	(abrir) - php artisan tinker
+
+	> Example
+		- $cliente = App\Cliente::create(['nome' => 'cliente', 'endereco' => 'rua tal', 'numero' => '1888']);
+
+> Login
+	- php artisan make:auth
